@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <style>
+        body{
+            background-image: url(../fondov.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        
+        .portafolio-header{
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            width: 100%;                       
+        }
+        .grid-portafolio{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .panel{
+            background-color: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(2px);
+            color: white;
+            thead th{
+                color: rgb(3, 125, 196);
+            }           
+
+        }
+        .perfil{            
+            td{
+                color: white;
+                vertical-align: top;
+                width: 50%;
+                padding: 10px;
+            }
+            img{
+                max-width: 200px;
+                background-color: white;
+            }
+        }
+        .habilidades{            
+            td{
+                color: white;
+                vertical-align: top;
+                width: 50%;
+                padding: 10px;
+            }
+            img{
+                max-width: 250px;
+            }            
+        }
+        .proyectos{
+            grid-column: span 2;
+            color: rgb(226, 230, 235);
+            flex-direction: column;
+            text-align: center;
+            
+            img{
+                max-width: 600px;
+            }
+            td{
+                color: white;
+                vertical-align: top;
+                width: 50%;
+                padding: 10px;
+            } 
+        }
+        
+        #menu{
+            background-color: black ;
+            border: 3px;
+            
+        }
+        button{
+             align-items: center;
+            background-color: rgba(0,0, 0,0.4);
+            color: white;
+            border-radius: 100%;
+            border: 1px;
+            padding: 0%;
+            margin: 2px;
+                   
+
+        }
+        button :hover{
+            transform: scale(1.12);
+        }
+        #redes img{
+            width: 40px;
+            border-radius: 100%;
+        }
+       
+    </style>
+</head>
+<body>
+    <main>
+        <header class="portafolio-header">
+            <h1>Bienvenido a nuestra Agencia</h1>
+            <h2>Julian D Salazar A / Tu Guia de Confianza</h2>
+            <nav id="menu">                
+                    <div><a href="../index.html">Pagina de Inicio</a></div>
+                    <div><a href="viajes.html">Viajes</a></div>
+                    <div><a href="./reservas.html">Reservas</a></div>  
+            </nav>           
+        
+        </header>
+        <section class="grid-portafolio">
+            <section class="panel perfil">
+                <table>
+                    <thead>
+                        <tr>                            
+                            <th><img src="../pareja.jpg" alt="voceto de mi perfil"></th>                            
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><ul>
+                                <h2><strong>Plan en Pareja: Aventura Urbana y Conexión</strong></h2>
+                                <li><strong>Enfoque:</strong> Exploración romántica, espacios de coworking, tours culturales y gastronómicos.</li>
+                                <li><strong>Destino Sugerido:</strong> Medellín y el Eje Cafetero (Colombia) o Sudeste Asiático.</li>
+                                <li><strong>Duración:</strong> 7 - 10 días.</li>
+                                <li><strong>Días 1 a 3:</strong> Recorridos por la ciudad, visitas a cafés de especialidad, museos y cenas en restaurantes de autor.</li>
+                                <li><strong>Días 4 a 6:</strong> Escapada a la naturaleza con estancias en hoteles boutique (senderismo o rutas panorámicas).</li>
+                                <li><strong>Día 7:</strong> Jornada libre para disfrutar del ritmo local y compartir momentos de descanso.</li>
+                            </ul></td>
+                            
+                            
+                           
+                        </tr>
+                       
+                    </tbody>
+                </table>
+            </section>
+            <section class="panel habilidades">
+                <table id="yo">
+                    <thead>
+                        <tr>                            
+                            <th><img src="../maletas.jpg" width="250px" alt="viaje"></th>                            
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>                                
+                                <ul>
+                                <h2><strong>>Planes individuales</strong></h2>
+                                <p><em>Enfoque: Aventura, autonomía y flexibilidad para descubrir el mundo a tu propio ritmo.</em></p>                                    
+                                <li><strong>Destino:</strong> Medellín y el Eje Cafetero (Colombia) o Sudeste Asiático.</li>
+                                <li><strong>Duración:</strong> 7 - 10 días.</li>
+                                <li><strong>Día 1 - 3:</strong> Exploración urbana, espacios de coworking, tours culturales y gastronómicos.</li>
+                                <li><strong>Día 4 - 6:</strong> Escapada a la naturaleza (senderismo, kayak o rutas en moto por zonas rurales).</li>
+                                <li><strong>Día 7:</strong> Día libre para conectar con otros viajeros y disfrutar de la gastronomía local.</li>
+                                    
+                            </ul></td>           
+                            
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section class="panel proyectos">
+                <h2>Gran Tour Mundial</h2>
+                <table>
+                    <tr>                    
+                        <td><img src="../viaje.jpeg" width="220px" alt="Gran Tour"></td>
+                        
+                    </tr>
+                                   
+                    <tr>
+                        <td><strong>Tour Transcontinental: Cultura, Historia y Modernidad</strong>
+                            <ul>
+                                <li><strong>Enfoque:</strong> Contrastes arquitectónicos, historia milenaria y metrópolis tecnológicas.</li>
+                                <li><strong>Destinos (4 Países):</strong> 
+                                    <ol>
+                                        <li>Japón (Tokio y Kioto)</li>
+                                        <li>Emiratos Árabes Unidos (Dubái)</li>
+                                        <li>Italia (Roma y Florencia)</li>
+                                        <li>Estados Unidos (Nueva York)</li>
+                                    </ol>
+                                </li>
+                                <li><strong>Duración:</strong> 16 - 20 días (aprox. 4-5 días por país).</li>
+                                <li><strong>Experiencias clave:</strong> Recorrer templos ancestrales, visitar rascacielos icónicos, explorar museos de arte mundial y disfrutar de la gastronomía local de cada región.</li>
+                            </ul>
+                        </td>
+                        
+                        
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="../pages/reservas.html">¡Reserva ya!</a>
+                        </td>
+                    </tr>
+                    <tr id="redes">
+                        <td><div>
+                            <a href="https://www.instagram.com/tierra_andina.co/" target="_blank">
+                                <button type="button"><img src="../redes/in.jpeg"></button>
+                            </a>
+                            <a href="https://www.facebook.com/61591047458708/photos/" target="_blank">
+                                <button type="button"><img src="../redes/f.jpeg"></button>
+                            </a>                       
+                         
+                        </div></td>
+                    </tr>   
+                
+               </table>
+
+            </section>
+        </section>    
+    
+    </main>
+
+</body>
+</html>

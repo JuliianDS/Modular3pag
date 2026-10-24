@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url(fondov.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            justify-content: center;
+        }
+        section{
+            color: white;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;            
+            justify-items: center;
+            background-color: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(3px);
+
+        }
+        article{
+            color: white;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;            
+            justify-items: center;           
+            
+        }
+        aside{
+            color: white;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;            
+            justify-items: center;
+        }
+        #perfil{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: rgb(6, 113, 235);            
+            background-color: black;
+        }        
+        button{
+             align-items: center;
+            background-color: rgba(0,0, 0,0.4);
+            color: white;
+            border-radius: 100%;
+            border: 1px;
+            padding: 0%;
+            margin: 2px;
+                   
+
+        }
+        button :hover{
+            transform: scale(1.12);
+        }
+        #redes img{
+            width: 40px;
+            border-radius: 100%;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <header id="perfil">
+            
+            <h1>Julian D Salazar A </h1>
+            <img src="rostro.jpg" width="200" height="300"> 
+            <nav id="menu">                
+                    <div><a href="index.html">Pagina de Inicio</a></div>
+                    <div><a href="./pages/viajes.html">Viajes</a></div>
+                    <div><a href="./pages/reservas.html">Reservas</a></div>  
+            </nav>
+        </header>
+        <section id="sobre-mi">
+        <h2>Sobre Mí</h2>
+        <p>
+            ¡Hola! Soy <strong>Julian D. Salazar A.</strong>, técnico en sistemas apasionado por la tecnología, el orden operativo y la exploración al aire libre. Me considero una persona proactiva, con gran facilidad para resolver problemas técnicos y coordinar procesos logísticos con eficiencia.
+        </p>
+        <p>
+            Fuera del entorno digital, disfruto enormemente del deporte, la actividad física y conectar a las personas con experiencias únicas en la naturaleza como guía turístico los fines de semana. Creo firmemente en el equilibrio entre el desarrollo profesional y las pasiones personales.
+        </p>
+        </section>
+
+        <section id="experiencia">
+            <h2>Experiencia Profesional</h2>
+
+            <article>
+                <h3>Técnico en Sistemas / Technical Lead</h3>
+                <p><strong>Enfoque:</strong> Mantenimiento, optimización y soporte de infraestructura tecnológica.</p>
+                <ul>
+                    <li><strong>Mantenimiento Preventivo y Correctivo:</strong> Limpieza física de hardware, diagnóstico de fallas y optimización de rendimiento de equipos de cómputo.</li>
+                    <li><strong>Soporte de Software:</strong> Formateo, reinstalación de sistemas operativos, configuración de controladores e instalación de aplicaciones personalizadas según las necesidades del cliente.</li>
+                    <li><strong>Redes e Infraestructura:</strong> Creación, configuración y mantenimiento de redes internas para optimizar la conectividad en salas de cómputo.</li>
+                </ul>
+            </article>
+
+            <article>
+                <h3>Control de Bodega / Admin Store</h3>
+                <p><strong>Enfoque:</strong> Gestión logística, control de inventarios y registro de operaciones.</p>
+                <ul>
+                    <li>Encargado del manejo y control de todos los insumos que ingresan y salen de la bodega.</li>
+                    <li>Registro detallado de facturas y conteo preciso de mercancía e insumos.</li>
+                    <li>Organización y optimización de espacios para un flujo de trabajo más ágil.</li>
+                </ul>
+            </article>
+
+            <article>
+                <h3>Guía Turístico y de Aventuras (Fines de Semana)</h3>
+                <p><strong>Enfoque:</strong> Planificación de rutas, liderazgo de grupos y turismo de naturaleza.</p>
+                <ul>
+                    <li>Diseño y guiado de recorridos seguros por la región, fomentando el respeto por el medio ambiente.</li>
+                    <li>Atención al detalle y hospitalidad para garantizar experiencias memorables a los visitantes.</li>
+                </ul>
+            </article>
+        </section>
+
+        <aside id="redes">
+            <h3>Redes Sociales y Enlaces Rápidos</h3>
+            <td><div>                
+                <a href="https://www.instagram.com/tierra_andina.co/" target="_blank">
+                    <button type="button"><img src="../redes/in.jpeg"></button>
+                </a>
+                <a href="https://www.facebook.com/61591047458708/photos/" target="_blank">
+                    <button type="button"><img src="../redes/f.jpeg"></button>
+                </a>               
+                
+            </div></td>
+        </aside>
+        
+
+    </main>
+</body>
+</html>
