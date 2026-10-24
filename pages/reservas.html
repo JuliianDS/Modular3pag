@@ -14,6 +14,24 @@
             justify-content: center;
             color: white;
         }
+        section{
+           color: white;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;            
+            justify-items: center;
+            background-color: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(3px); 
+        }
+        header{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: rgb(6, 113, 235);            
+            background-color: black;
+        }
     </style>
 
 </head>
@@ -56,28 +74,24 @@
                 </fieldset>
                 <fieldset>
 
-                    <legend>Tu Alquiler</legend>
+                    <legend>Tu Viaje</legend>
 
                     <div>
                         <label for="fecha">Fecha de reserva</label>
                         <input type="date" id="fecha" name="fecha" required>
                     </div>
+                    
                     <div>
-                        <label for="cantidad">Cantidad de bicicletas</label>
-                        <input type="number" id="cantidad" name="cantidad_bc" min="1" max="50">
-                    </div>
+                        <p>Tipo de Plan de Viaje</p>
 
-                    <div>
-                        <p>Tipo de bicicleta</p>
+                        <input type="radio" id="individual" name="planv" value="individual">
+                        <label for="individual">Plan individual</label>
 
-                        <input type="radio" id="montaña" name="t-bici" value="montaña">
-                        <label for="montaña">Montaña</label>
+                        <input type="radio" id="pareja" name="planv" value="pareja">
+                        <label for="urbana">Plan en pareja</label>
 
-                        <input type="radio" id="urbana" name="t-bici" value="urbana">
-                        <label for="urbana">Urbana</label>
-
-                        <input type="radio" id="electrica" name="t-bici" value="electrica">
-                        <label for="electrica">Electrica</label>
+                        <input type="radio" id="tour" name="planv" value="tour">
+                        <label for="tour">Gran tour</label>
 
                     </div>
                 </fieldset>
