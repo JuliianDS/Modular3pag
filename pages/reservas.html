@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reservas</title>
+    <link rel="stylesheet" href="../css/style.css">
     <style>
         body{
             background-image: url(../fondov.jpg);
@@ -49,24 +50,30 @@
         </header>
         <section>
             <h2>Formulario de Viajes</h2>
-            <form action="" method="post" >
+            <form id="formulario" method="post" >
                 <fieldset>
 
                     <legend>Tus Datos</legend> 
 
-                    <div>
+                    <div class="campo">
                         <label for="nombre">Nombre Completo</label>
                         <input type="text" id="nombre" name="nombre" required>
                     </div>
-                    <div>
+                    <div class="campo">
                         <label for="cedula">Documento de Identidad</label>
                         <input type="number" id="cedula" name="cedula" required>
                     </div>
-                    <div>
+                    <div class="campo">
                         <label for="correo">Correo Electronico</label>
-                        <input type="email" id="correo" name="correo" required>
+                        <input 
+                            type="email" 
+                            id="correo" 
+                            name="correo" 
+                            required
+                            placeholder="example@email.com"
+                            >
                     </div>
-                    <div>
+                    <div class="campo">
                         <label for="contacto">Numero de Contacto</label>
                         <input type="tel" id="contacto" name="contacto" required>
                     </div>
@@ -76,12 +83,13 @@
 
                     <legend>Tu Viaje</legend>
 
-                    <div>
+                    <div class="campo">
                         <label for="fecha">Fecha de reserva</label>
-                        <input type="date" id="fecha" name="fecha" required>
+                        <input type="date" id="fecha" name="fecha" required 
+                        placeholder="DD/MM/AAAA">
                     </div>
                     
-                    <div>
+                    <div class="campo">
                         <p>Tipo de Plan de Viaje</p>
 
                         <input type="radio" id="individual" name="planv" value="individual">
@@ -98,12 +106,12 @@
                 <FIEldset>
                     <legend>Confirmación</legend>
 
-                    <div>
+                    <div class="campo">
                         <label for="nota">Notas adicionales</label>
                         <textarea name="n-especiales" id="notas" rows="4" cols="30"></textarea>
 
                     </div>
-                    <div>
+                    <div class="campo">
                         <input type="checkbox" id="terminos" name="acepta_terminos" value="si" required>
                         <label for="terminos">Aceptas los términos y condiciones</label>
                     </div>

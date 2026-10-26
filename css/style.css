@@ -1,0 +1,22 @@
+#formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(11, 16, 15, 0.853);
+}
+.campo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.campo label{
+    background-color: rgba(255, 255, 255, 0.925);
+    
+}
+.campo input{
+    gap: 1rem;
+
+}
