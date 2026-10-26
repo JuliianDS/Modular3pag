@@ -4,6 +4,9 @@
     justify-content: center;
     align-items: center;
     background-color: rgba(11, 16, 15, 0.853);
+    textarea{
+        width: 100%;
+    }
 }
 .campo{
     display: flex;
